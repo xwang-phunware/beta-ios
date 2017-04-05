@@ -68,7 +68,7 @@ Then initialize it in the `application:didFinishLaunchingWithOptions:` method wi
 {
  	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
 	[PWCore setApplicationID:<#(NSString *)#> accessKey:<#(NSString *)#> signatureKey:<#(NSString *)#> encryptionKey:@""];
-    ...
+	...
 }
 ```
 >
@@ -88,28 +88,41 @@ func application(_ application: UIApplication, >didFinishLaunchingWithOptions la
 ### Documentation 
 http://phunware.github.io/maas-location-ios-sdk 
 
-TBD
+### Setup
+Firstly, you have to make sure the `PWCore` setup correctly.
+
+Then, TBD
 
 ## PWMapKit
 
 ### Documentation 
 http://phunware.github.io/maas-location-ios-sdk 
 
-TBD
+
+### Setup
+Firstly, you have to make sure the `PWCore` setup correctly.
+
+Then, TBD
 
 ## PWMessaging
 
 ### Documentation 
 http://phunware.github.io/maas-messaging-ios-sdk 
 
-TBD
+### Setup
+Firstly, you have to make sure the `PWCore` setup correctly.
+
+Then, TBD
 
 ## PWAds
 
 ### Documentation 
 http://phunware.github.io/maas-ads-ios-sdk 
 
-TBD
+### Setup
+Firstly, you have to make sure the `PWCore` setup correctly.
+
+Then, TBD
 
 Privacy
 -----------
