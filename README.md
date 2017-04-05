@@ -66,7 +66,7 @@ Then initialize it in the `application:didFinishLaunchingWithOptions:` method wi
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
-    [PWCore setApplicationID:<#(NSString *)#> accessKey:<#(NSString *)#> signatureKey:<#(NSString *)#> encryptionKey:<#(NSString *)#>];
+    [PWCore setApplicationID:<#(NSString *)#> accessKey:<#(NSString *)#> signatureKey:<#(NSString *)#> encryptionKey:@""];
     ...
 }
 ```
@@ -76,7 +76,7 @@ Then initialize it in the `application:didFinishLaunchingWithOptions:` method wi
 > ```objective-c
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
-	PWCore.setApplicationID(<#T##applicationID: String!##String!#>, accessKey: <#T##String!#>, signatureKey: <#T##String!#>, encryptionKey: <#T##String!#>)
+	PWCore.setApplicationID(<#applicationID: String!#>, accessKey: <#String!#>, signatureKey: <#String!#>, encryptionKey: "")
 	...
 }
 ```
