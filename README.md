@@ -47,16 +47,17 @@ http://phunware.github.io/maas-core-ios-sdk
 First to import it with:
 > 
 > Objective-C
-> 
+>  
 ```objective-c
 #import <PWCore/PWCore.h>
 ```
 >
 > Swift
 >
-> ```swift
-> import PWCore
-> ```
+```swift
+import PWCore
+```
+>
 
 Then initialize it in the `application:didFinishLaunchingWithOptions:` method with:
 > 
@@ -65,22 +66,21 @@ Then initialize it in the `application:didFinishLaunchingWithOptions:` method wi
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
-    [PWCore setApplicationID:<#(NSString *)#> accessKey:<#(NSString *)#> signatureKey:<#(NSString *)#> encryptionKey:@""];
+ 	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
+	[PWCore setApplicationID:<#(NSString *)#> accessKey:<#(NSString *)#> signatureKey:<#(NSString *)#> encryptionKey:@""];
     ...
 }
 ```
 >
 > Swift
 > 
-> ```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+```swift
+func application(_ application: UIApplication, >didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
 	PWCore.setApplicationID(<#applicationID: String!#>, accessKey: <#String!#>, signatureKey: <#String!#>, encryptionKey: "")
 	...
 }
 ```
->
 >
 
 ## PWLocation
