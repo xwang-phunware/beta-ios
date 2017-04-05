@@ -54,7 +54,7 @@ First to import it with:
 >
 > Swift
 >
-> ```objective-c
+> ```swift
 > import PWCore
 > ```
 
@@ -73,13 +73,14 @@ Then initialize it in the `application:didFinishLaunchingWithOptions:` method wi
 >
 > Swift
 > 
-> ```objective-c
+> ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 	// These values can be found for your application in the MaaS portal (http://maas.phunware.com/clients).
 	PWCore.setApplicationID(<#applicationID: String!#>, accessKey: <#String!#>, signatureKey: <#String!#>, encryptionKey: "")
 	...
 }
 ```
+>
 >
 
 ## PWLocation
