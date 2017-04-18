@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary  = 'Phunware SDKs (BETA)'
   s.homepage = 'https://github.com/phunware/beta-ios'
   s.authors  = { 'Phunware' => 'info@phunware.com' }
-	s.source   = { :git => "git@github.com:phunware/beta-ios.git", :tag => "v1.0.0" }
+	s.source   = { :git => "https://github.com/phunware/beta-ios.git", :tag => "v1.0.0" }
   s.requires_arc = true
   
   s.ios.deployment_target = '9.0'  
@@ -18,12 +18,14 @@ Pod::Spec.new do |s|
 			sss.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony'
 			sss.libraries = 'z', 'xml2.2'
 			sss.ios.dependency 'SSZipArchive'
+      sss.ios.dependency 'TMCache'
 	  end
 
   	ss.subspec 'Location' do |sss|
     	sss.ios.vendored_frameworks = 'Framework/PWLocation.framework'
 	  	sss.dependency 'Phunware/Beta/Core'
 		  sss.dependency 'MistSDK'
+      sss.dependency 'TMCache'
 
   		sss.ios.library = 'c++'
 		  sss.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreBluetooth', 'CoreMotion', 'CoreLocation', 'MapKit'
@@ -33,16 +35,18 @@ Pod::Spec.new do |s|
 		ss.subspec 'MapKit' do |sss|
     	sss.ios.vendored_frameworks = 'Framework/PWMapKit.framework'
 		  sss.ios.dependency 'Phunware/Beta/Location'
+      sss.ios.dependency 'TMCache'
 	  	sss.ios.frameworks = 'Security', 'CoreGraphics', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreLocation', 'MapKit'
   	end
-  	
-  	ss.subspec 'Messaging' do |sss|
-    	sss.ios.vendored_frameworks = 'Framework/PWMessaging.framework'
-	  	sss.dependency 'Phunware/Beta/Core'
 
-		  sss.ios.frameworks = 'CoreLocation'
-  		sss.library = 'sqlite3', 'z'
-	  end
+    ss.subspec 'Messaging' do |sss|
+      sss.ios.vendored_frameworks = 'Framework/PWMessaging.framework'
+      sss.dependency 'Phunware/Beta/Core'
+      sss.dependency 'FMDB'
+
+      sss.ios.frameworks = 'CoreLocation'
+      sss.library = 'sqlite3', 'z'
+    end
 	  
 	  ss.subspec 'Ads' do |sss|
     	sss.ios.vendored_frameworks = 'Framework/PWAdvertising.framework'
