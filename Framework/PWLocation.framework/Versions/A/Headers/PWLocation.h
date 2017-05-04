@@ -13,6 +13,7 @@
 #import <PWLocation/PWLocationManager.h>
 #import <PWLocation/PWMSELocationManager.h>
 #import <PWLocation/PWSLLocationManager.h>
+#import <PWLocation/PWIALocationManager.h>
 #import <PWLocation/PWVBLocationManager.h>
 #import <PWLocation/PWManagedLocationManager.h>
 #import <PWLocation/PWManagedProviderInfo.h>
