@@ -10,6 +10,8 @@
 
 #import <PWCore/PWAnalytics.h>
 #import <PWCore/PWCME.h>
+#import <PWCore/PWBundleManager.h>
+#import <PWCore/PWAPIManager.h>
 
 #define  PWCore_Version  @"3.1.0"
 
