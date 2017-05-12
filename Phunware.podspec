@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name     = 'Phunware'
-  s.version  = '1.0.7'
+  s.version  = '1.0.9'
   s.license  = 'MIT'
   s.summary  = 'Phunware SDKs (BETA)'
   s.homepage = 'https://github.com/phunware/beta-ios'
   s.authors  = { 'Phunware' => 'info@phunware.com' }
-	s.source   = { :git => "https://github.com/phunware/beta-ios.git", :tag => "v1.0.7" }
+	s.source   = { :git => "https://github.com/phunware/beta-ios.git", :tag => "v1.0.9" }
   s.requires_arc = true
   
   s.ios.deployment_target = '9.0'  
@@ -41,8 +41,8 @@ Pod::Spec.new do |s|
 	  	sss.ios.frameworks = 'Security', 'CoreGraphics', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony', 'CoreLocation', 'MapKit'
   	end
 
-    ss.subspec 'Messaging' do |sss|
-      sss.ios.vendored_frameworks = 'Framework/PWMessaging.framework'
+    ss.subspec 'Engagement' do |sss|
+      sss.ios.vendored_frameworks = 'Framework/PWEngagement.framework'
       sss.dependency 'Phunware/Beta/Core'
       sss.dependency 'FMDB'
 
