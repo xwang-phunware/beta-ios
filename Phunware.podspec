@@ -1,19 +1,11 @@
 Pod::Spec.new do |s|
   s.name     = 'Phunware'
-<<<<<<< Updated upstream
-  s.version  = '1.0.6'
-=======
   s.version  = '1.0.8'
->>>>>>> Stashed changes
   s.license  = 'MIT'
   s.summary  = 'Phunware SDKs (BETA)'
   s.homepage = 'https://github.com/phunware/beta-ios'
   s.authors  = { 'Phunware' => 'info@phunware.com' }
-<<<<<<< Updated upstream
-	s.source   = { :git => "https://github.com/phunware/beta-ios.git", :tag => "v1.0.6" }
-=======
 	s.source   = { :git => "https://github.com/phunware/beta-ios.git", :tag => "v1.0.8" }
->>>>>>> Stashed changes
   s.requires_arc = true
   
   s.ios.deployment_target = '9.0'  
