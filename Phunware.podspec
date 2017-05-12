@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
 			sss.libraries = 'z', 'xml2.2'
 			sss.ios.dependency 'SSZipArchive'
       sss.ios.dependency 'TMCache'
+      sss.ios.dependency 'AFNetworking'
 	  end
 
   	ss.subspec 'Location' do |sss|
