@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary  = 'Phunware SDKs (BETA)'
   s.homepage = 'https://github.com/phunware/beta-ios'
   s.authors  = { 'Phunware' => 'info@phunware.com' }
-	s.source   = { :git => "https://github.com/phunware/beta-ios.git", :tag => "v1.1.7" }
+	s.source   = { :git => "https://github.com/phunware/beta-ios.git", :tag => "v1.1.6.1" }
   s.requires_arc = true
   
   s.ios.deployment_target = '9.0'  
