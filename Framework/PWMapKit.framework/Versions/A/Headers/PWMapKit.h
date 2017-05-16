@@ -18,6 +18,15 @@
 #import <PWMapKit/PWRouteInstruction.h>
 #import <PWMapKit/PWMapPoint.h>
 #import <PWMapKit/PWCustomPointOfInterest.h>
+
+/** Light weight UI **/
+#import <PWMapKit/PWRouteStartView.h>
+#import <PWMapKit/PWMapViewController.h>
+#import <PWMapKit/PWBuildingViewController.h>
+#import <PWMapKit/PWRouteViewController.h>
+#import <PWMapKit/PWRouteInstructionsView.h>
+#import <PWMapKit/PWRouteInstructionsViewController.h>
+#import <PWMapKit/PWPointOfInterestViewController.h>
 #import <PWMapKit/PWBuildingAnnotationView.h>
 #import <PWMapKit/PWAnnotationLabel.h>
 
